@@ -5,6 +5,7 @@ This is a simple RAG (Retrieval-Augmented Generation) demo using Chainlit.
 ## Setup
 
 ```bash
+poetry shell
 poetry install
 ```
 
