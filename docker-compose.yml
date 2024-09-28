@@ -1,0 +1,18 @@
+name: coffee
+
+services:
+  postgresql:
+    build:
+      dockerfile: postgresql.dockerfile
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=coffee
+      - POSTGRES_PASSWORD=coffee
+      - POSTGRES_DB=coffee
+    volumes:
+      - postgresql-data:/var/lib/postgresql/data
+      - ./shared:/shared
+
+volumes:
+  postgresql-data:

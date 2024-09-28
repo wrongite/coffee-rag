@@ -50,10 +50,6 @@ __pycache__/
 .venv/
 poetry.lock
 
-# Docker
-.dockerignore
-Dockerfile
-docker-compose.yml
 
 # Distribution / packaging
 .Python
